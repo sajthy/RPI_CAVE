@@ -12,7 +12,7 @@ lcd.message("  Proba Homero\n   2013.09.21   ")
 sleep(2)
 lcd.clear()
 
-#   Homero kezd
+#   Temp meter begin
 
 import os, signal, sys
 import glob 
@@ -119,6 +119,7 @@ while True:
 
 
 #    print timestamp, read_temp(), "C" , "Max", maxtemp, "Min", mintemp, deltaTnew
+
     lcd.home()
     lcd.message (str(read_temp()) + " Max: " + str(maxtemp))
 # format delta T value
